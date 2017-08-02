@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ConnorChristie/Set-System-Time.git"
+    "url": "git+https://github.com/ConnorChristie/Set-System-Clock.git"
   },
   "keywords": [
     "time",
@@ -20,9 +20,9 @@
   "author": "Connor Christie",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ConnorChristie/Set-System-Time/issues"
+    "url": "https://github.com/ConnorChristie/Set-System-Clock/issues"
   },
-  "homepage": "https://github.com/ConnorChristie/Set-System-Time#readme",
+  "homepage": "https://github.com/ConnorChristie/Set-System-Clock#readme",
   "devDependencies": {
     "@types/node": "^8.0.19",
     "rimraf": "^2.6.1",
