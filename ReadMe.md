@@ -6,7 +6,7 @@ Only supports Windows and Linux as of now.
 
 ## Installation
 ```
-npm i set-system-time -S
+npm i set-system-clock -S
 ```
 
 ## API
