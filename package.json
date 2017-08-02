@@ -1,0 +1,34 @@
+{
+  "name": "set-system-time",
+  "version": "1.0.0",
+  "description": "Sets the system date and time.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc -p .",
+    "test": "npm run build && node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConnorChristie/Set-System-Time.git"
+  },
+  "keywords": [
+    "time",
+    "date",
+    "system",
+    "clock"
+  ],
+  "author": "Connor Christie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ConnorChristie/Set-System-Time/issues"
+  },
+  "homepage": "https://github.com/ConnorChristie/Set-System-Time#readme",
+  "devDependencies": {
+    "@types/node": "^8.0.19",
+    "rimraf": "^2.6.1",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "dateformat": "^2.0.0"
+  }
+}
