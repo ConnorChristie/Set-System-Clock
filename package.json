@@ -1,8 +1,9 @@
 {
   "name": "set-system-clock",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Sets the system date and time.",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "rimraf dist && tsc -p .",
     "test": "npm run build && node test.js"

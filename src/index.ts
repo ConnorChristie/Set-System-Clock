@@ -2,7 +2,7 @@ import { IDateTimeControl, Controllers } from './shared';
 
 import * as os from 'os';
 
-class DateTimeControl {
+export class DateTimeControl {
     private dateTimeControl: IDateTimeControl;
     
     constructor() {
@@ -34,4 +34,4 @@ class DateTimeControl {
     }
 }
 
-module.exports = new DateTimeControl();
+export default new DateTimeControl();
