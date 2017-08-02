@@ -1,4 +1,4 @@
-# Set-System-Time
+# Set-System-Clock
 
 Sets the system date and time through the use of platform dependent commands.
 
@@ -19,7 +19,7 @@ DateTimeControl.setDateTime(dateTime: Date);
 
 ## Code Example
 ```js
-var DateTimeControl = require('set-system-time');
+var DateTimeControl = require('set-system-clock');
 
 // Sets the date and time to the date specified
 DateTimeControl.setDateTime(new Date('8/1/2017 13:14:12'));
