@@ -15,12 +15,12 @@ export class DateTimeControl {
         this.dateTimeControl = new controller();
     }
 
-    public setDateTime(dateTime: Date) {
+    public setDateTime(dateTime: Date, options?: any) {
         if (!this.isSupported()) {
             return;
         }
 
-        this.dateTimeControl.setDateTime(dateTime);
+        this.dateTimeControl.setDateTime(dateTime, options || {});
     }
 
     private isSupported() {
