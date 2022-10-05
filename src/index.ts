@@ -9,6 +9,8 @@ export class DateTimeControl {
 		return DateTimeControl.setter(date, options);
 	}
 
+	public setDateTime = DateTimeControl.setDateTime;
+
 	private static getSetter() {
 		switch (platform()) {
 			case "win32":
@@ -21,5 +23,4 @@ export class DateTimeControl {
 	}
 	private static setter = DateTimeControl.getSetter();
 }
-
 export default DateTimeControl;
