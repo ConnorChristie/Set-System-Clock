@@ -3,7 +3,7 @@
 		"types": ["node"],
 		"module": "commonjs",
 		"moduleResolution": "node",
-		"target": "es6",
+		"target": "ESNext",
 		"removeComments": true,
 		"preserveConstEnums": true,
 		"stripInternal": true,
