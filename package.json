@@ -1,35 +1,36 @@
 {
-  "name": "set-system-clock",
-  "version": "1.0.4",
-  "description": "Sets the system date and time.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "rimraf dist && tsc -p .",
-    "test": "npm run build && node test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ConnorChristie/Set-System-Clock.git"
-  },
-  "keywords": [
-    "time",
-    "date",
-    "system",
-    "clock"
-  ],
-  "author": "Connor Christie",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ConnorChristie/Set-System-Clock/issues"
-  },
-  "homepage": "https://github.com/ConnorChristie/Set-System-Clock#readme",
-  "devDependencies": {
-    "@types/node": "^8.0.19",
-    "rimraf": "^2.6.1",
-    "typescript": "^2.4.2"
-  },
-  "dependencies": {
-    "dateformat": "^2.0.0"
-  }
+	"name": "set-system-clock",
+	"version": "1.0.4",
+	"description": "Sets the system date and time.",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "rimraf dist && tsc -p .",
+		"test": "npm run build && node test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ConnorChristie/Set-System-Clock.git"
+	},
+	"keywords": [
+		"time",
+		"date",
+		"system",
+		"clock"
+	],
+	"author": "Connor Christie",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ConnorChristie/Set-System-Clock/issues"
+	},
+	"homepage": "https://github.com/ConnorChristie/Set-System-Clock#readme",
+	"devDependencies": {
+		"@types/dateformat": "^5.0.0",
+		"@types/node": "^18.8.2",
+		"rimraf": "^3.0.2",
+		"typescript": "^4.8.4"
+	},
+	"dependencies": {
+		"dateformat": "^5.0.3"
+	}
 }

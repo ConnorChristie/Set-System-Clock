@@ -1,21 +1,16 @@
 {
-    "compilerOptions": {
-        "types": [
-            "node"
-        ],
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "target": "es6",
-        "removeComments": true,
-        "preserveConstEnums": true,
-        "stripInternal": true,
-        "declaration": true,
-        "outDir": "dist",
-        "typeRoots": [
-            "node_modules/@types"
-        ]
-    },
-    "include": [
-        "src/**/*.ts"
-    ]
+	"compilerOptions": {
+		"types": ["node"],
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"target": "es6",
+		"removeComments": true,
+		"preserveConstEnums": true,
+		"stripInternal": true,
+		"declaration": true,
+		"outDir": "dist",
+		"typeRoots": ["node_modules/@types"],
+		"strict": true
+	},
+	"include": ["src/**/*.ts"]
 }
