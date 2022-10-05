@@ -1,5 +1,7 @@
 import DateTimeControl from ".";
 
+const originalDateTime = new Date();
+
 const timeDiff = (a: Date, b: Date) => {
 	const diff = a.getTime() - b.getTime();
 	if (diff < 0) return diff * -1;
@@ -15,4 +17,5 @@ DateTimeControl.setDateTime(dateToSet).then(() => {
 	if (timeDiff(dateToSet, newDate) > 10) {
 		throw new Error(`Tests Failed! System time was not set correctely.\nExpected: ${dateToSet.toISOString()}\nGot: ${newDate.toISOString()}`);
 	}
+	DateTimeControl.setDateTime(originalDateTime);
 });
