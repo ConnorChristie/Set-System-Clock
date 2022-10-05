@@ -11,3 +11,4 @@ webpack.*
 **/.vscode
 .npmignore
 .gitignore
+dist/test.*
