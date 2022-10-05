@@ -1,16 +1,15 @@
-import WindowsDateTimeControl from './windows.clock';
-import LinuxDateTimeControl from './linux.clock';
+import { exec as execCallback } from "child_process";
+import { promisify } from "util";
+export const exec = promisify(execCallback);
 
-export interface IDateTimeControl {
-    setDateTime(dateTime: Date, options: any);
-}
-
-export enum Platform {
-    WINDOWS = 'win32',
-    LINUX = 'linux'
-}
-
-export const Controllers = {
-    [Platform.WINDOWS]: WindowsDateTimeControl,
-    [Platform.LINUX]: LinuxDateTimeControl
-};
+export const getDateFormat = new Promise<string>((res) => {
+	let s = "";
+	const console = execCallback("date");
+	console.stdout?.on("data", (str: string) => {
+		s += str;
+		if (s.length === 69) {
+			console.kill();
+			res(s.slice(59, -2));
+		}
+	});
+});
